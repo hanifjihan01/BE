@@ -1,0 +1,28 @@
+GET http://localhost:5000/article/
+
+###
+GET http://localhost:5000/article/1
+
+###
+POST http://localhost:5000/article/
+Content-Type: application/json
+
+{
+    "title" : "Mari Menabung",
+    "content" : "Anak Pintar",
+    "category" : "Education Book",
+    "status" : "succes"
+}
+
+###
+PATCH http://localhost:5000/article/1
+Content-Type: application/json
+
+{
+    "title" : "One Piece",
+    "content" : "Oda Sensei",
+    "category" : "Action",
+    "status" : "succes"
+}
+###
+DELETE  http://localhost:5000/article/3
